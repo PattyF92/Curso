@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+<form>
+<br>
+
+<button (click)="cadastro(this.Curso)">cadastro</button>
+<button>Alterar</button>
+<button>Excluir</button>
+</form>
+
+
+<!-- tabela-->
+<table border="1">
+    <tr *ngFor="let v  vetor">
+        <td> {{v.nomeCurso}}</td>
+        <td>{{v.valorCurso}}</td>
+        <td><button (click)="SelecionarCurso(v)" >Selecionar Curso</button></td>
+    </tr>
+
+</table>
